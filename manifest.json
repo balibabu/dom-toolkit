@@ -1,0 +1,24 @@
+{
+    "manifest_version": 3,
+    "name": "UI Blocker",
+    "version": "1.0",
+    "description": "Block elements and inject custom CSS per site",
+    "permissions": [
+        "storage",
+        "activeTab",
+        "scripting"
+    ],
+    "host_permissions": [
+        "<all_urls>"
+    ],
+    "action": {
+        "default_popup": "popup.html"
+    },
+    "content_scripts": [
+        {
+            "matches": ["<all_urls>"],
+            "js": ["content.js","jsrunner.js"],
+            "run_at": "document_idle"
+        }
+    ]
+}
