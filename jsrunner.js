@@ -1,11 +1,12 @@
-const sites=[
+const sites = [
     ['youtube.com', handleYouTube],
-    ['chatgpt.com', handleChatGPT]
+    ['chatgpt.com', handleChatGPT],
+    ['github.com', handleGithub]
 ];
 
 
 function handleYouTube() {
-    console.log('you are on youtube.');
+    alert('stay focused');
 }
 
 function handleChatGPT() {
@@ -30,3 +31,11 @@ function handleChatGPT() {
     new MutationObserver(rm).observe(document.body, { childList: true, subtree: true });
     console.log('MutationObserver loaded');
 }
+
+function handleGithub() {
+    console.log('you are on github');
+}
+
+
+const domain = location.hostname;
+sites.forEach(site => site[0] === domain && site[1]());

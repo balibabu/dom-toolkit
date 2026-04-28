@@ -1,0 +1,6 @@
+chatgpt.com##div[class*="thread-content-max-width"]{max-width:100%!important;}
+chatgpt.com##section[data-turn]>div:first-of-type>div:first-of-type{max-width:100%!important;width:100%!important;}
+chatgpt.com##div[data-message-author-role="user"] .user-message-bubble-color{max-width:90%!important;width:90%!important;}
+chatgpt.com##div[data-message-author-role="assistant"] .markdown{max-width:90%!important;width:90%!important;}
+chatgpt.com##div[data-message-author-role="user"]{display:flex!important;justify-content:flex-end!important;padding-left:10%!important;}
+chatgpt.com##div[data-message-author-role="assistant"]{display:flex!important;justify-content:flex-start!important;padding-right:10%!important;}

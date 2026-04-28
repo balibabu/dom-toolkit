@@ -31,9 +31,4 @@ chrome.storage.local.get(["rules"], (data) => {
             document.documentElement.appendChild(style);
         }
     });
-
-    // JS Injection
-    sites.forEach(site => {
-        if (domain.includes(site[0])) site[1]();
-    });
 });
